@@ -25,18 +25,33 @@ Computer Vision Automation
 
 ## 📋 Como Usar
 
-1.  **Instalação:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-2.  **Calibração:**
-    - Execute o script e utilize os botões `MAP` para registrar as coordenadas de interface no seu monitor.
-    - O sistema salvará automaticamente em um arquivo `config.json`.
-3.  **Inputs Visuais:**
-    - Certifique-se de que as imagens de referência (`btn_open.png`, `btn_continue.png`, `match_found.png`) estão na pasta raiz e correspondem à sua resolução de tela.
-4.  **Execução:**
-    - **F1:** Inicia o ciclo de automação (Start).
-    - **F2:** Interrupção de emergência (Kill-switch).
+1. Preparação da Pasta
+Extraia tudo: Não rode o bot direto de dentro do arquivo .zip. Extraia todos os arquivos para uma pasta na sua Área de Trabalho.
+
+Arquivos Necessários: Certifique-se de que o .exe e as imagens (btn_open.png, match_found.png, etc.) estão na mesma pasta.
+
+2. Configuração do Jogo
+Modo de Janela: Deixe o Roblox em Modo Janela ou Janela Sem Bordas.
+
+Resolução: O bot funciona melhor em resoluções padrão (como 1920x1080). Se ele não reconhecer os botões, você terá que tirar seus próprios prints e substituir os arquivos .png com o mesmo nome respectivamente.
+
+3. Calibração (Obrigatório)
+Antes de dar o Start, o bot precisa saber onde clicar no seu monitor:
+
+Abra o GPO_Macro.exe como Administrador.
+
+No jogo, vá até o menu principal.
+
+No Macro, clique no botão MAP ao lado de "1. Queue" e, em seguida, clique no botão de Fila dentro do jogo.
+
+Repita o processo para todos os 5 botões da lista.
+
+Quando as coordenadas ao lado de cada botão ficarem VERDES, a calibração está concluída.
+
+4. Controles
+START (F1): Inicia o ciclo automático. O bot entrará na fila, esperará a partida, upará força e começará o spam de m1 esperar acabar a partida e repetir.
+
+STOP (F2): Interrompe todas as ações do mouse e teclado imediatamente.
 
 ## 🧠 Visão de Engenharia
 
