@@ -1,0 +1,5 @@
+pyautogui
+pydirectinput
+pynput
+keyboard
+opencv-python
