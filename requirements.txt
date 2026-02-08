@@ -3,3 +3,5 @@ pydirectinput
 pynput
 keyboard
 opencv-python
+
+## apenas se for executar no o .py
